@@ -10,8 +10,12 @@ const Navbar = () => {
         <Logo />
       </a>
       <SearchBar />
-      <Button>Give FeedBack</Button>
+      <CustomButton buttonText="Give Feedback" />
     </nav>
   );
+  function CustomButton({ buttonText }) {
+    return <Button>{buttonText}</Button>;
+  }
+  
 };
 export default Navbar;
