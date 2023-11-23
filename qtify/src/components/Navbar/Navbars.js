@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import Logo from "../Logo/Logo.js";
+import Logo from "../Logo/Logos.js";
 import SearchBar from "../Search/Search.js";
 import Style from "./Navbar.module.css";
  function Navbar() {
