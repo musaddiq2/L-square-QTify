@@ -1,18 +1,22 @@
 import React from "react";
 import Style from "./SearchBar.module.css";
 import { ReactComponent as SearchIcon } from "../../assets/Search-icon.svg";
-function Search({ placeholder }) {
+const Search = ({ placeholder }) => {
   const onSubmit = (e) => {
     e.preventDefault();
   };
   return (
     <form className={Style.wrapper} onSubmit={onSubmit}>
-      <input className={Style.search} placeholder="Search a album of your choice" required />
+      <input
+        className={Style.search}
+        placeholder="Search a album of your choice"
+        required
+      />
       <button className={Style.searchButton} type="submit">
-        {<SearchIcon />} {" "}
+        {<SearchIcon />}{" "}
       </button>
     </form>
   );
-}
+};
 
 export default Search;
