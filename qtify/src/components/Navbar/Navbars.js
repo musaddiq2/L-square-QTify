@@ -1,10 +1,9 @@
 import React from "react";
 import Button from "../Button/Button";
-import Logo from "../Logo/logo";
+import Logo from "../Logo/Logo.js";
 import SearchBar from "../Search/Search.js";
 import Style from "./Navbar.module.css";
-
-export default function Navbar() {
+ function Navbar() {
   return (
     <nav className={Style.navbar}>
       <a href="/">
@@ -15,3 +14,4 @@ export default function Navbar() {
     </nav>
   );
 }
+export default Navbar;
