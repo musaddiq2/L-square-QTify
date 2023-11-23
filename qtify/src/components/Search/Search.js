@@ -7,7 +7,7 @@ function Search({ placeholder }) {
   };
   return (
     <form className={Style.wrapper} onSubmit={onSubmit}>
-      <input className={Style.search} placeholder={placeholder} required />
+      <input className={Style.search} placeholder="Search a album of your choice" required />
       <button className={Style.searchButton} type="submit">
         {<SearchIcon />} {" "}
       </button>
