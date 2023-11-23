@@ -6,7 +6,7 @@ import Style from "./Navbar.module.css";
 
 export default function Navbar() {
   return (
-    <nav className={Style.nav}>
+    <nav className={Style.navbar}>
       <a href="/">
         <Logo />
       </a>
