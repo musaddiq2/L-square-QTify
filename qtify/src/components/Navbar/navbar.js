@@ -4,7 +4,7 @@ import Logo from "../Logo/logo";
 import SearchBar from "../SearchBar/searchBar";
 import Style from "./Navbar.module.css";
 
-export default function navbar() {
+export default function Navbar() {
   return (
     <nav className={Style.nav}>
       <Logo />
