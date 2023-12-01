@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+flex-wrap:wrap;
+  gap: 40px;
+  
+  
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.showAll {
+  color: var(--color-primary);
+  text-align: right;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.cardWrapper {
+  margin-top: 18px;
+}
