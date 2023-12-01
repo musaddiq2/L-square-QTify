@@ -24,3 +24,11 @@ export const fetchTopSongs = async () => {
     console.log(err);
   }
 };
+export const fetchFilters = async () => {
+  try {
+    const res = await axios.get(`${BACKEND_ENDPOINT}/genres`);
+    return res.data;
+  } catch (err) {
+    console.log(err);
+  }
+};

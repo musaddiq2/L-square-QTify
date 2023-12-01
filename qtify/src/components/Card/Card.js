@@ -37,25 +37,23 @@ function Card({ data, type }) {
         );
       }
       case "songs": {
-        const { image, like, title, songs } = data;
+        const { image, likes, title } = data;
 
         return (
           <>
-            <Tooltip title={`${songs.length}songs`}>
-              <div className={style.wrapper}>
-                <div className={style.card}>
-                  <img src={image} alt="songs" loading="lazy" />
-                </div>
+            <div className={style.wrapper}>
+              <div className={style.card}>
+                <img src={image} alt="songs" loading="lazy" />
                 <div className={style.banner}>
                   <div className={style.pill}>
-                    <p>{`${like}like`}</p>
+                    <p>{`${likes}`} Likes</p>
                   </div>
                 </div>
               </div>
-              <div className={style.titleWrapper}>
-                <p>{title}</p>
-              </div>
-            </Tooltip>
+            </div>
+            <div className={style.titleWrapper}>
+              <p>{title}</p>
+            </div>
           </>
         );
       }

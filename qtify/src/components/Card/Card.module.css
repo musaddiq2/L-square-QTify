@@ -29,6 +29,7 @@
 .pill {
   font-size: 12px;
   background-color: var(--color-black);
+  color: var(--color-white);
   width: max-content;
   padding: 6px;
   border-radius: 10px;
@@ -36,7 +37,7 @@
 .titleWrapper {
   color: var(--color-white);
   margin-top: 6px;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis !important;
   overflow: hidden;
   -webkit-line-clamp: 2;
   display: -webkit-box;
